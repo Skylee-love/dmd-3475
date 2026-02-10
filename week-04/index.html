@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+<body>
+    <h1>Week 4</h1>
+    <h2>exercise 1 - revised grading simulator</h2>
+
+    <script>
+        var numbergrade = prompt("What was your number grade?");
+            numbergrade = parseInt(numbergrade); // we converted this input into a number
+
+            //isNaN?
+        console.log(isNaN(numbergrade));
+
+        if(isNaN(numbergrade)){
+            numbergrade = prompt("That wasn't a number. Enter your number grade again")
+        } else {
+            var lettergrade = "A";
+
+            if(numbergrade >= 90){
+                lettergrade = "A";
+            } else if (numbergrade >= 80 && numbergrade < 90) {
+                lettergrade = "B";
+            }
+
+            alert("your letter grade is " + lettergrade);
+        }
+
+        //var sum = parseInt(numbergrade + 1);
+        //console.log("the type of input is: " + typeof numbergrade);
+        //console.log("numbergrade plus one: " + numbergrade + 1);
+
+
+    </script>
+</body>
+</html>
